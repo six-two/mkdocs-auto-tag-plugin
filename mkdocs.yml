@@ -1,0 +1,24 @@
+site_name: mkdocs-auto-tag-plugin
+
+theme:
+  name: material
+
+nav:
+# Hide the index page -> would otherwise result in two mkdocs-badges links
+- "": index.md
+- setup.md
+
+plugins:
+- search
+- badges
+- tags:
+    tags_file: tags.md
+
+# SEE https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+- assets/stylesheets/custom.css

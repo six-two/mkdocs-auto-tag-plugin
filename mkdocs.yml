@@ -4,15 +4,25 @@ theme:
   name: material
 
 nav:
-# Hide the index page -> would otherwise result in two mkdocs-badges links
-- "": index.md
+- "Introduction": index.md
 - setup.md
+- usage.md
+- "Tests": test/index.md
 
 plugins:
 - search
 - badges
 - tags:
-    tags_file: tags.md
+    tags_file: test/index.md
+- autotag:
+    globs:
+      "*": Documentation
+      "test/**": Test page
+      "index?md": "Index page"
+      "**/index.md": "Index page"
+      "**/linux/**": "Linux"
+      "test/macos/**": "MacOS"
+      "*/windows/**": "Windows"
 
 # SEE https://squidfunk.github.io/mkdocs-material/reference/admonitions/
 markdown_extensions:
@@ -20,5 +30,3 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
-extra_css:
-- assets/stylesheets/custom.css

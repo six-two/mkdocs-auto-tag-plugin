@@ -16,4 +16,4 @@ However it is hard to differentiate them when using `Material for MkDocs`'s sear
 ## Interested?
 
 Then click `Next` or use the search function (in the top right corner) to learn more.
-You can also checkout the source code of the plugin and this site at the [Github repository](https://github.com/six-two/mkdocs-badges).
+You can also checkout the source code of the plugin and this site at the [Github repository](https://github.com/six-two/mkdocs-auto-tag-plugin).

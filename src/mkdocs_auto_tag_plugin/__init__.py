@@ -11,6 +11,6 @@ def warning(message: str) -> None:
 # Import local files in the correct order
 # from .utils import replace_regex_matches
 # from .normal_badge import replace_normal_badges
-from .plugin import BadgesPlugin
+from .plugin import Plugin
 
-__all__ = ["BadgesPlugin"]
+__all__ = ["Plugin"]

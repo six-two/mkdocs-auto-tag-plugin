@@ -10,8 +10,9 @@ However it is hard to differentiate them when using `Material for MkDocs`'s sear
 
 ## Features
 
-- TODO
-- Works with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- Automatically assign tags based on file names or paths
+    - Match via [globs](/usage/#globs), no need to understand regular expressions.
+- Designed to work with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), but should probably work with tag plugins too.
 
 ## Interested?
 

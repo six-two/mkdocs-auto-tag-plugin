@@ -17,12 +17,22 @@ plugins:
 - autotag:
     globs:
       "*": Documentation
-      "test/**": Test page
+      "test/**":
+      - Test page
+      - Test case 1
       "index?md": "Index page"
       "**/index.md": "Index page"
       "**/linux/**": "Linux"
       "test/macos/**": "MacOS"
       "*/windows/**": "Windows"
+    regex:
+      # Parse out the file name and add it to a tag
+      "(?:.*/)?([^/]+)": "filename: {0}"
+      # This is how you can hangle multiple groups
+      "([^/]+)/([^/]+)/.*":
+      - "main folder: {0}"
+      - "sub folder: {1}"
+      - "{0}/{1}/"
 
 # SEE https://squidfunk.github.io/mkdocs-material/reference/admonitions/
 markdown_extensions:

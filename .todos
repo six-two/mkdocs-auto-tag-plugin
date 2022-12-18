@@ -1,2 +1,2 @@
-- regex match, where the tag can be determined by capture groups
 - enable reading rules from file?
+- add option to use load custom python code for determining tags?

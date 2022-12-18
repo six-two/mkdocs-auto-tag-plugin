@@ -23,6 +23,10 @@ They should be tagged correctly.
 
 ### HEAD
 
+- Added support for assigning lists of tag to globs.
+- Added regex support
+    - Capture groups can be used to generate dynamic tags
+
 ### 0.1.0
 
 - Implemented working prototype that uses custom globs for the file path matching.

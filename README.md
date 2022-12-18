@@ -23,6 +23,8 @@ They should be tagged correctly.
 
 ### HEAD
 
+### 0.1.1
+
 - Added support for assigning lists of tag to globs.
 - Added regex support
     - Capture groups can be used to generate dynamic tags

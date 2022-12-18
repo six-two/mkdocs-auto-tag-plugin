@@ -1,4 +1,3 @@
-import fnmatch
 import os
 import re
 from typing import NamedTuple
@@ -135,7 +134,7 @@ class Plugin(BasePlugin[MyConfig]):
                         if rule.tags_with_placeholders:
                             actual_tags = list(rule.tags_static)
                             # we need to replace the placeholders in the dynamic tags
-                            values = match.groups()
+                            values = [str(x) for x in match.groups()]
                             for tag in rule.tags_with_placeholders:
                                 tag = replace_placeholders(tag, values)
                                 actual_tags.append(tag)

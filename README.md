@@ -5,8 +5,6 @@
 
 This plugin is designed to add tags to files based on their path (parent direcctories or file name).
 
-!!! Warning: Pre alpha: This is currently just a PoC for myself
-
 ## Documentation
 
 This README is just a short intro to the package.
@@ -22,6 +20,10 @@ They should be tagged correctly.
 ## Notable changes
 
 ### HEAD
+
+### 0.1.2
+
+- Just small documentation changes. But I needed to increase the version number to remove the `!!! Warning: Pre alpha: This is currently just a PoC for myself` line from the PyPI site
 
 ### 0.1.1
 

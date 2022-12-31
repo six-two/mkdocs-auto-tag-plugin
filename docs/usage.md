@@ -22,6 +22,8 @@ plugins:
 ```
 
 You can also look at the [repo's mkdocs.yml](https://github.com/six-two/mkdocs-auto-tag-plugin/blob/main/mkdocs.yml) file.
+Please note, that even if you are on a Windows system, the paths should use forward slashes.
+They are normalized interanlly to provide a consistent cross-platform behavior.
 
 ## globs
 

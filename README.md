@@ -19,7 +19,9 @@ They should be tagged correctly.
 
 ## Notable changes
 
-### HEAD
+### 0.1.3
+
+- Just fixed the `DeprecationWarning` for `warning_filter`
 
 ### 0.1.2
 

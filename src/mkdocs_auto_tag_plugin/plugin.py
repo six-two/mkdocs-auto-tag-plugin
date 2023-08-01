@@ -89,7 +89,7 @@ def replace_placeholders(string_with_placeholders: str, values: list[str]) -> st
     return string_with_placeholders.format(*values)
 
 class Plugin(BasePlugin[MyConfig]):
-    def on_config(self, config: MkDocsConfig, **kwargs) -> Config:
+    def on_config(self, config: MkDocsConfig, **kwargs) -> MkDocsConfig:
         """
         Called once when the config is loaded.
         It will make modify the config and initialize this plugin.
